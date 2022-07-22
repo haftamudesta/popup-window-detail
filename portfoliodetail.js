@@ -24,7 +24,7 @@ see1.addEventListener('click', () => {
   section2p.style.display = 'block';
   mobilePopup();
 });
-seeProject.forEach((n) =>n.addEventListener('click', (e) => {
+seeProject.forEach((n) => n.addEventListener('click', (e) => {
   e.preventDefault();
   main.style.opacity = '0';
   section2p.style.display = 'block';
