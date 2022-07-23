@@ -15,7 +15,6 @@ function mobilePopup() {
 }
 function desktopPopup() {
 }
-const main = document.querySelector('.main');
 const section2p = document.querySelector('.section2p');
 const see1 = document.querySelector('.see1');
 const seeProject = document.querySelectorAll('.project');
@@ -30,7 +29,7 @@ see1.addEventListener('click', () => {
   section2p.style.display = 'block';
   section1.style.display = 'block';
   section1.style.marginTop = '-698px';
-  section1.style.height='710px'
+  section1.style.height = '710px';
   section1.style.opacity = '1';
   section1.style.opacity = '0.9';
   section2.style.opacity = '0';
