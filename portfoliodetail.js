@@ -19,17 +19,6 @@ const main = document.querySelector('.main');
 const section2p = document.querySelector('.section2p');
 const see1 = document.querySelector('.see1');
 const seeProject = document.querySelectorAll('.project');
-see1.addEventListener('click', () => {
-  main.style.opacity = '0';
-  section2p.style.display = 'block';
-  mobilePopup();
-});
-seeProject.forEach((n) => n.addEventListener('click', (e) => {
-  e.preventDefault();
-  main.style.opacity = '0';
-  section2p.style.display = 'block';
-  mobilePopup();
-}));
 const desktopPop = document.querySelector('.desktop-popup');
 const see2 = document.querySelector('.see2');
 const myProject = document.querySelector('.my-project');
@@ -37,8 +26,35 @@ const section1 = document.querySelector('.section1');
 const section2 = document.querySelector('.section2');
 const section3 = document.querySelector('.section3');
 const section4 = document.querySelector('.section4');
+see1.addEventListener('click', () => {
+  section2p.style.display = 'block';
+  section1.style.display = 'block';
+  section1.style.marginTop = '-698px';
+  section1.style.height='710px'
+  section1.style.opacity = '1';
+  section1.style.opacity = '0.9';
+  section2.style.opacity = '0';
+  section3.style.opacity = '0';
+  section4.style.opacity = '0';
+  mobilePopup();
+});
+seeProject.forEach((n) => n.addEventListener('click', (e) => {
+  e.preventDefault();
+  section2p.style.display = 'block';
+  section1.style.display = 'block';
+  section1.style.marginTop = '-698px';
+  section1.style.height = '710px';
+  section1.style.opacity = '1';
+  section1.style.opacity = '0.9';
+  section2.style.opacity = '0';
+  section3.style.opacity = '0';
+  section4.style.opacity = '0';
+  mobilePopup();
+}));
 see2.addEventListener('click', () => {
   section1.style.marginTop = '-620px';
+  section1.style.height = '700px';
+  section1.style.opacity = '0.9';
   section2.style.opacity = '0';
   section3.style.opacity = '0';
   section4.style.opacity = '0';
@@ -85,8 +101,11 @@ mobilePopup(); {
   classDetail.insertAdjacentHTML('beforeend', detailPopup);
   section.appendChild(classDetail);
   document.querySelector('.close1').addEventListener('click', () => {
-    main.style.opacity = '1';
+    section2.style.opacity = '1';
+    section3.style.opacity = '1';
+    section4.style.opacity = '1';
     section2p.style.display = 'none';
+    section1.style.marginTop = '0';
     section2p.classList.remove('active');
   });
 }
