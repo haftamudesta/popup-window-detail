@@ -29,9 +29,9 @@ see1.addEventListener('click', () => {
   section2p.style.display = 'block';
   section1.style.display = 'block';
   section1.style.marginTop = '-698px';
-  section1.style.height = '710px';
+  section1.style.height = '730px';
   section1.style.opacity = '1';
-  section1.style.opacity = '0.9';
+  section1.style.opacity = '0.7';
   section2.style.opacity = '0';
   section3.style.opacity = '0';
   section4.style.opacity = '0';
@@ -42,9 +42,9 @@ seeProject.forEach((n) => n.addEventListener('click', (e) => {
   section2p.style.display = 'block';
   section1.style.display = 'block';
   section1.style.marginTop = '-698px';
-  section1.style.height = '710px';
+  section1.style.height = '730px';
   section1.style.opacity = '1';
-  section1.style.opacity = '0.9';
+  section1.style.opacity = '0.7';
   section2.style.opacity = '0';
   section3.style.opacity = '0';
   section4.style.opacity = '0';
@@ -52,7 +52,7 @@ seeProject.forEach((n) => n.addEventListener('click', (e) => {
 }));
 see2.addEventListener('click', () => {
   section1.style.marginTop = '-620px';
-  section1.style.height = '700px';
+  section1.style.height = '650px';
   section1.style.opacity = '0.9';
   section2.style.opacity = '0';
   section3.style.opacity = '0';
