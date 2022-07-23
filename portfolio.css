@@ -1429,6 +1429,8 @@ ul {
     padding-right: 8%;
     margin-bottom: -20%;
     z-index: 99;
+    justify-content: center;
+    align-items: center;
   }
 
   .detail {
@@ -1482,9 +1484,10 @@ ul {
     font-style: normal;
     font-size: 16px;
     font-weight: 400;
-    width: 424px;
+    width: 360px;
     line-height: 30px;
     height: 336px;
+    padding-right: 40px;
     color: #344563;
   }
 
